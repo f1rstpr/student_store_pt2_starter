@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(morgan("tiny"));
 // check if user exist in auth header
 // if it does then attach the user to res.locals
-app.use(security.extractUserFromJwt)
+app.use(security.extractUserFromJwt);
 
 app.use("/auth", authRoutes);
 
