@@ -26,8 +26,6 @@ router.post("/register", async (req, res, next) => {
 
 
 router.get("/me", security.requireAuthenticatedUser, async (req, res, next) => {
-  console.log(res.locals.user);
-  console.log("wtf");
   try {
     const { email } = res.locals.user;
 
