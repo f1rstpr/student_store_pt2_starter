@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const { SECRET_KEY } = require("../config");
-const { UnauthorizedError } = require("../utils/error");
+const { UnauthorizedError } = require("../utils/errors");
 
 // get schema token
 const jwtFrom = ({ headers }) => {
